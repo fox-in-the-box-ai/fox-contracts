@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foxinthebox.ai/schemas/capabilities.json",
+  "title": "Capabilities",
+  "description": "Response schema for GET /capabilities",
+  "type": "object",
+  "properties": {
+    "contract_version": { "type": "string" },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": { "type": "boolean" }
+    }
+  },
+  "required": ["contract_version", "capabilities"]
+}

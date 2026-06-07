@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foxinthebox.ai/schemas/readyz.json",
+  "title": "Readyz",
+  "description": "Response schema for GET /readyz",
+  "type": "object",
+  "properties": {
+    "ready": {
+      "type": "boolean"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "ok": { "type": "boolean" },
+          "detail": { "type": "string" }
+        },
+        "required": ["ok"]
+      }
+    }
+  },
+  "required": ["ready", "checks"]
+}

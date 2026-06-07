@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foxinthebox.ai/schemas/version.json",
+  "title": "Version",
+  "description": "Response schema for GET /version",
+  "type": "object",
+  "properties": {
+    "contract_version": { "type": "string" },
+    "image_digest": { "type": "string" },
+    "runtime": { "type": "string" },
+    "runtime_version": { "type": "string" },
+    "overlay_version": { "type": "string" }
+  },
+  "required": ["contract_version"]
+}

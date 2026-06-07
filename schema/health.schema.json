@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://foxinthebox.ai/schemas/health.json",
+  "title": "Health",
+  "description": "Response schema for GET /health",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["ok"]
+    }
+  },
+  "required": ["status"],
+  "additionalProperties": false
+}
